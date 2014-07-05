@@ -45,7 +45,7 @@ public class IdleChanger : MonoBehaviour
 		}
 		
 		// ↓キーが押されたら、ステートを前に戻す処理
-				if (Input.GetKeyDown ("down")) {
+		if (Input.GetKeyDown ("down")) {
 			// ブーリアンBackをtrueにする
 			anim.SetBool ("Back", true);
 		}
@@ -74,11 +74,11 @@ public class IdleChanger : MonoBehaviour
 
 	void OnGUI()
 	{
-				GUI.Box(new Rect(Screen.width - 110 , 10 ,100 ,90), "Change Motion");
-				if(GUI.Button(new Rect(Screen.width - 100 , 40 ,80, 20), "Next"))
-					anim.SetBool ("Next", true);
-				if(GUI.Button(new Rect(Screen.width - 100 , 70 ,80, 20), "Back"))
-					anim.SetBool ("Back", true);
+		GUI.Box(new Rect(Screen.width - 110 , 10 ,100 ,90), "Change Motion");
+		if(GUI.Button(new Rect(Screen.width - 100 , 40 ,80, 20), "Next"))
+			anim.SetBool ("Next", true);
+		if(GUI.Button(new Rect(Screen.width - 100 , 70 ,80, 20), "Back"))
+			anim.SetBool ("Back", true);
 	}
 
 

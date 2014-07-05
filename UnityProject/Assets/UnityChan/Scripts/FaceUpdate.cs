@@ -3,11 +3,14 @@ using System.Collections;
 
 public class FaceUpdate : MonoBehaviour
 {
-	public AnimationClip[] animations;
+	[SerializeField]
+	private AnimationClip[] animations;
 
-	Animator anim;
+	[SerializeField]
+	private Animator anim;
 
-	public float delayWeight;
+	[SerializeField]
+	private float delayWeight;
 
 	void Start ()
 	{
@@ -28,7 +31,6 @@ public class FaceUpdate : MonoBehaviour
 
 	void Update ()
 	{
-
 		if (Input.GetMouseButton (0)) {
 			current = 1;
 		} else {

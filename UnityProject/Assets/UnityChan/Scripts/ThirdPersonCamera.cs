@@ -30,8 +30,8 @@ public class ThirdPersonCamera : MonoBehaviour
 			jumpPos = GameObject.Find ("JumpPos").transform;
 
 		//カメラをスタートする
-			transform.position = standardPos.position;	
-			transform.forward = standardPos.forward;	
+		transform.position = standardPos.position;	
+		transform.forward = standardPos.forward;	
 	}
 
 	
