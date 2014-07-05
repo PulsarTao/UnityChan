@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{5B580621-09B4-68CB-B5F4-5B9DD210A60F}</ProjectGuid>
+	<ProjectGuid>{FDE690F1-626F-FFA0-5754-E83120972A79}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,19 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\UnityChan\Scripts\CameraController.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\FaceUpdate.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\GameTitle\UIObjectController.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\IdleChanger.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" />
-     <Compile Include="Assets\UnityChan\Scripts\UnityChanControlScriptWithRgidBody.cs" />
-     <Compile Include="Assets\UnityChan\SplashScreen\Scripts\SplashScreen.cs" />
-     <Compile Include="Assets\iTweenEditor\Examples\StartAndStopTween.cs" />
-     <Compile Include="Assets\iTweenEditor\Helper Classes\EventParamMappings.cs" />
-     <Compile Include="Assets\iTweenEditor\Helper Classes\Vector3OrTransform.cs" />
-     <Compile Include="Assets\iTweenEditor\Helper Classes\Vector3OrTransformArray.cs" />
-     <Compile Include="Assets\iTweenEditor\iTweenEvent.cs" />
-     <Compile Include="Assets\iTweenEditor\iTweenPath.cs" />
+     <Compile Include="Assets\Plugins\Pixelplacement\iTween\Sample\MoveSample.cs" />
+     <Compile Include="Assets\Plugins\Pixelplacement\iTween\Sample\RotateSample.cs" />
+     <Compile Include="Assets\Plugins\Pixelplacement\iTween\Sample\SampleInfo.cs" />
+     <Compile Include="Assets\Plugins\Pixelplacement\iTween\iTween.cs" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_fuku.shader" />
      <None Include="Assets\UnityChan\Voice\unity-chan_voice_list.txt" />
@@ -73,10 +64,6 @@
      <None Include="Assets\Plugins\Pixelplacement\iTween\ReadMe!\ReadMe!.txt" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada.shader" />
      <None Include="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_hada_blend.shader" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{FDE690F1-626F-FFA0-5754-E83120972A79}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
