@@ -22,6 +22,7 @@ public class ThirdPersonCamera : MonoBehaviour
 	{
 		// 各参照の初期化
 		standardPos = GameObject.Find ("CamPos").transform;
+		Debug.Log("x = " + standardPos.position.x + ", y = "+ standardPos.position.y + ", z = " +standardPos.position.z);
 		
 		if(GameObject.Find ("FrontPos"))
 			frontPos = GameObject.Find ("FrontPos").transform;
@@ -38,31 +39,30 @@ public class ThirdPersonCamera : MonoBehaviour
 	void FixedUpdate ()	// このカメラ切り替えはFixedUpdate()内でないと正常に動かない
 	{
 		
-		if(Input.GetButton("Fire1"))	// left Ctlr
-		{	
-			// Change Front Camera
-			setCameraPositionFrontView();
-		}
-		
-		else if(Input.GetButton("Fire2"))	//Alt
-		{	
-			// Change Jump Camera
-			setCameraPositionJumpView();
-		}
-		
-		else
-		{	
+//		if(Input.GetButton("Fire1"))	// left Ctlr
+//		{	
+//			// Change Front Camera
+//			setCameraPositionFrontView();
+//		}
+//		
+//		if(Input.GetButton("Fire2"))	//Alt
+//		{	
+//			// Change Jump Camera
+//			setCameraPositionJumpView();
+//		}
+//		else
+//		{	
 			// return the camera to standard position and direction
 			setCameraPositionNormalView();
-		}
+//		}
 	}
 
 	void setCameraPositionNormalView()
 	{
 		if(bQuickSwitch == false){
 		// the camera to standard position and direction
-						transform.position = Vector3.Lerp(transform.position, standardPos.position, Time.fixedDeltaTime * smooth);	
-						transform.forward = Vector3.Lerp(transform.forward, standardPos.forward, Time.fixedDeltaTime * smooth);
+			transform.position = Vector3.Lerp(transform.position, standardPos.position, Time.fixedDeltaTime * smooth);	
+			transform.forward = Vector3.Lerp(transform.forward, standardPos.forward, Time.fixedDeltaTime * smooth);
 		}
 		else{
 			// the camera to standard position and direction / Quick Change
@@ -85,7 +85,7 @@ public class ThirdPersonCamera : MonoBehaviour
 	{
 		// Change Jump Camera
 		bQuickSwitch = false;
-				transform.position = Vector3.Lerp(transform.position, jumpPos.position, Time.fixedDeltaTime * smooth);	
-				transform.forward = Vector3.Lerp(transform.forward, jumpPos.forward, Time.fixedDeltaTime * smooth);		
+		transform.position = Vector3.Lerp(transform.position, jumpPos.position, Time.fixedDeltaTime * smooth);	
+		transform.forward = Vector3.Lerp(transform.forward, jumpPos.forward, Time.fixedDeltaTime * smooth);		
 	}
 }

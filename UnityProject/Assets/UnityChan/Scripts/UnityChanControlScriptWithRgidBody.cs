@@ -107,7 +107,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		transform.localPosition += velocity * Time.fixedDeltaTime;
 
 		// 左右のキー入力でキャラクタをY軸で旋回させる
-		transform.Rotate(0, h * rotateSpeed, 0);	
+//		transform.Rotate(0, h * rotateSpeed, 0);	
 	
 
 		// 以下、Animatorの各ステート中での処理
