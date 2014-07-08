@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\iTweenEditor\Editor\iTweenEventDataEditor.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\UnityChan\Voice\unity-chan_voice_list.txt">
     <Files>
-      <File FileName="Assets\UnityChan\SplashScreen\Scripts\SplashScreen.cs" Line="12" Column="1" />
+      <File FileName="Assets\UnityChan\Scripts\GameTitle\UIObjectController.cs" Line="26" Column="32" />
+      <File FileName="Assets\UnityChan\SplashScreen\Scripts\SplashScreen.cs" Line="1" Column="1" />
       <File FileName="Assets\UnityChan\Scripts\GameTitle\UIObjectController.cs" Line="1" Column="1" />
       <File FileName="Assets\UnityChan\Stage\Shader\AlphaMask.shader" Line="1" Column="1" />
       <File FileName="Assets\UnityChan\Scripts\ThirdPersonCamera.cs" Line="1" Column="1" />
@@ -10,7 +11,11 @@
       <File FileName="Assets\UnityChan\Scripts\IdleChanger.cs" Line="1" Column="1" />
       <File FileName="Assets\UnityChan\Scripts\FaceUpdate.cs" Line="1" Column="1" />
       <File FileName="Assets\UnityChan\Scripts\CameraController.cs" Line="1" Column="1" />
-      <File FileName="Assets\iTweenEditor\Editor\iTweenEventDataEditor.cs" Line="292" Column="1" />
+      <File FileName="Assets\iTweenEditor\Editor\iTweenEventDataEditor.cs" Line="277" Column="48" />
+      <File FileName="Assets\iTweenEditor\iTweenEvent.cs" Line="1" Column="1" />
+      <File FileName="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_akarami_blend.shader" Line="1" Column="1" />
+      <File FileName="Assets\UnityChan\Models\UnityChanShader\Shader\Unitychan_chara_eye.shader" Line="1" Column="1" />
+      <File FileName="Assets\UnityChan\Voice\unity-chan_voice_list.txt" Line="364" Column="28" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
