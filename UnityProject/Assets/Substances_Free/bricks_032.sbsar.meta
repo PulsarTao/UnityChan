@@ -123,7 +123,7 @@ SubstanceImporter:
     materialInformation:
       serializedVersion: 5
       offset: {x: 0, y: 0}
-      scale: {x: 1, y: 1}
+      scale: {x: 10, y: 450}
       generateMipmaps: 1
       generateAllOutputs: 1
       animationUpdateRate: 42
@@ -135,14 +135,14 @@ SubstanceImporter:
             name: _MainTex
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
+            scale: {x: 10, y: 450}
             offset: {x: 0, y: 0}
         data:
           first:
             name: _BumpMap
           second:
             texture: {instanceID: 0}
-            scale: {x: 1, y: 1}
+            scale: {x: 10, y: 450}
             offset: {x: 0, y: 0}
       floats:
         data:
@@ -197,7 +197,7 @@ SubstanceImporter:
     - shaderProp:
         name: _BumpMap
       material: {instanceID: 0}
-      baseUID: 3813292638
+      baseUID: 3813286014
     buildTargetSettings:
     - serializedVersion: 2
       buildTarget: 
