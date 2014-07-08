@@ -79,7 +79,8 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		
 		
 		// 以下、キャラクターの移動処理
-		velocity = new Vector3(0, 0, v);		// 上下のキー入力からZ軸方向の移動量を取得
+		velocity = new Vector3(h, 0, v);		// 上下のキー入力からZ軸方向の移動量を取得
+		velocity.Normalize();
 		// キャラクターのローカル空間での方向に変換
 		velocity = transform.TransformDirection(velocity);
 		//以下のvの閾値は、Mecanim側のトランジションと一緒に調整する
@@ -105,7 +106,6 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 
 		// 上下のキー入力でキャラクターを移動させる
 		transform.localPosition += velocity * Time.fixedDeltaTime;
-
 		// 左右のキー入力でキャラクタをY軸で旋回させる
 //		transform.Rotate(0, h * rotateSpeed, 0);	
 	
