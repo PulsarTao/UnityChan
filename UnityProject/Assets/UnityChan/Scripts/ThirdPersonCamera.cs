@@ -17,7 +17,8 @@ public class ThirdPersonCamera : BaseScript
 	// スムーズに繋がない時（クイック切り替え）用のブーリアンフラグ
 	bool bQuickSwitch = false;	//Change Camera Position Quickly
 	
-	
+
+	// 
 	void Start()
 	{
 		// 各参照の初期化
