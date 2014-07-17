@@ -2,7 +2,7 @@
 using System.Collections;
 
 [ExecuteInEditMode]
-public class SplashScreen : MonoBehaviour
+public class SplashScreen : BaseScript
 {
 	void NextLevel ()
 	{

@@ -11,7 +11,7 @@ using System.Collections;
 
 
 
-public class IdleChanger : MonoBehaviour
+public class IdleChanger : BaseScript
 {
 	
 	private Animator anim;						// Animatorへの参照

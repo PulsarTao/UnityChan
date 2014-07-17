@@ -11,7 +11,7 @@ using System.Collections;
 [RequireComponent(typeof (CapsuleCollider))]
 [RequireComponent(typeof (Rigidbody))]
 
-public class UnityChanControlScriptWithRgidBody : MonoBehaviour
+public class UnityChanControlScriptWithRgidBody : BaseScript
 {
 
 	public float animSpeed = 1.5f;				// アニメーション再生速度設定
@@ -50,6 +50,7 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 	static int jumpState = Animator.StringToHash("Base Layer.Jump");
 	static int restState = Animator.StringToHash("Base Layer.Rest");
 
+	private RunTextController runText;	//走行距離を表示する
 // 初期化
 	void Start ()
 	{
@@ -60,10 +61,15 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 		rb = GetComponent<Rigidbody>();
 		//メインカメラを取得する
 		cameraObject = GameObject.FindWithTag("MainCamera");
+		//GUITextを取得する
+		runText = GameObject.Find("RunText").GetComponent<RunTextController>();
+		if(runText == null) Debug.Log("runTextがnullだ");
+
+
 		// CapsuleColliderコンポーネントのHeight、Centerの初期値を保存する
 		orgColHight = col.height;
 		orgVectColCenter = col.center;
-}
+	}
 	
 	
 // 以下、メイン処理.リジッドボディと絡めるので、FixedUpdate内で処理を行う.
@@ -109,12 +115,18 @@ public class UnityChanControlScriptWithRgidBody : MonoBehaviour
 				}
 			}
 		}
-		
 
+		velocity = velocity * Time.fixedDeltaTime;
 		// 上下のキー入力でキャラクターを移動させる
-		transform.localPosition += velocity * Time.fixedDeltaTime;
+		transform.localPosition += velocity;
 		// 左右のキー入力でキャラクタをY軸で旋回させる
 //		transform.Rotate(0, h * rotateSpeed, 0);	
+		runText.runMeter -= velocity.z;
+
+//		if(runText.runMeter < 0.0f){
+//			Time.timeScale = 0.0f;
+//		}
+
 	
 
 		// 以下、Animatorの各ステート中での処理

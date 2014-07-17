@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class UIObjectController : MonoBehaviour {
+public class UIObjectController : BaseScript {
 	
 	public GUISkin guiSkin;
 
@@ -25,7 +25,7 @@ public class UIObjectController : MonoBehaviour {
 		int buttonX = Screen.width / 2;
 		int buttonY = Screen.height / 2;
 		if (GUI.Button (new Rect (buttonX, buttonY, 200, 100), "GameStart")) {
-			Debug.Log("GameStart");
+			Application.LoadLevel("TestStage");
 		}
 	}
 }

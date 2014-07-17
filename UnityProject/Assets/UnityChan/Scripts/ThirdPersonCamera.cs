@@ -7,7 +7,7 @@ using UnityEngine;
 using System.Collections;
 
 
-public class ThirdPersonCamera : MonoBehaviour
+public class ThirdPersonCamera : BaseScript
 {
 	public float smooth = 3f;		// カメラモーションのスムーズ化用変数
 	Transform standardPos;			// the usual position for the camera, specified by a transform in the game

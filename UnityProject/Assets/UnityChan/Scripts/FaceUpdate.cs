@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FaceUpdate : MonoBehaviour
+public class FaceUpdate : BaseScript
 {
 	[SerializeField]
 	private AnimationClip[] animations;

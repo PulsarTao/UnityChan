@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class FloorController : MonoBehaviour {
+public class FloorController : BaseScript {
 
 	// Use this for initialization
 	void Start () {
